@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Palette+Mosaic&family=Poppins:wght@600&display=swap');
+@import url(https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=Beaufort+for+LOL+Bold);
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+    background-color: #1E1D1D;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Palette Mosaic', cursive;
+    font-weight: 100;
+}
+h1 {
+    font-size: 10vw;
+}
+h2 {
+    font-size: 2rem;
+}
+
+.sections:not(#menu) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.sections:not(#menu, footer){
+    min-height: 100vh;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    position: fixed;
+    right: 0;
+    margin: 15px;
+    z-index: 2;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.side-nav {
+    background: fixed url(./images/rain.webp);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: width 0.4s;
+}
+
+.side-nav a {
+    padding: 15px 25px;
+    width: 160px;
+    text-align: end;
+    font-size: 20px;
+    color: #fffefe;
+    text-wrap: nowrap;
+    transition: font-size 0.5s;
+}
+
+.side-nav a:hover {
+    color: #00ffdd;
+    background-color: #062e2e3b;
+    backdrop-filter: blur(5px);
+    font-size: 21px;
+}
+
+.menu-toggle:checked ~ .side-nav {
+    width: 160px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: fixed url(./images/rain.webp);
+}
+#home p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.basicSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby h2 {
+    backdrop-filter: blur(10px);
+    font-family: "Beaufort for LOL Bold";
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #00000070;
+    padding: 8px 15px;
+}
+.hobby {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.hobby-img img {
+    width: 300px;
+    max-width: 80vw;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.hobby-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 450px;
+    max-width: 80vw;
+}
+.hobby-text p {
+    line-height: 1.3em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#seraphine {
+    background: fixed center url(./images/seraBack.jpg);
+}
+#zoe {
+    background: fixed center url(./images/zoeBack.jpg);
+}
+#trundle {
+    background: fixed center url(./images/trundleBack.jpg);
+}
+#outros {
+    background: fixed center url(./images/beth.jpg);
+}
+#fim {
+    background: fixed center url(./images/parasyte.gif);
+}
+#seraphine, #zoe, #trundle, #outros, #fim {
+    background-size: cover;
+}
+
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.skill {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid white;
+    padding: 40px 30px;
+    width: 300px;
+    max-width: 80vw;
+}
+.skill h3, .skill h3 * {
+    font-family: "Poppins", Sans-serif;
+}
+.skill span {
+    position: relative;
+}
+.skill span::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: 13%;
+    height: 0.3em;
+    width: 104%;
+    left: -1%;
+    background-color: #2C49D8;
+}
+.skill p {
+    padding: 0 25px;
+    line-height: 1.3em;
+    font-size: 0.8em;
+}
+.skill p::before, .skill p::after  {
+    display: block;
+    opacity: 0.3;
+    color: white;
+    display: block;
+    margin-left: -25px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.skill p::before {
+    content: "<wenderson>";
+    margin-bottom: 5px;
+}
+.skill p::after {
+    content: "</wenderson>";
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #000000;
+    height: 20vh;
+}
+footer img {
+    height:35px;
+}
+
+
+
+
+
+
+
+
+
+
+
